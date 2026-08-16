@@ -4,6 +4,9 @@
 
 RecRedTeam is the first full-spectrum safety-audit framework for recommendation/shopping agents. It fills the missing "harm auditing" half of trustworthy-recommendation benchmarks (e.g. PRA): beyond *recommendation quality*, it audits **whether an agent can be manipulated into harming its users**.
 
+<img width="1536" height="1024" alt="ChatGPT Image Aug 16, 2026, 06_48_41 PM" src="https://github.com/user-attachments/assets/4fc93d58-4ad9-4adf-83c3-62eade61a579" />
+
+
 > 🌐 [中文版 README](README.zh-CN.md)
 
 ## Why RecRedTeam
