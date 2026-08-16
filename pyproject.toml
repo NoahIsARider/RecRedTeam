@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "recreadteam"
+version = "0.1.0"
+description = "RecRedTeam: LLM/Agentic Recommendation System Red-Team Audit Framework"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "RecRedTeam" }]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+dashboard = ["streamlit>=1.30"]
+llm = ["openai>=1.30"]
+agents = ["langgraph>=0.2", "openai-agents>=0.1"]
+
+[project.scripts]
+recreadteam = "recreadteam.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["recreadteam*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
